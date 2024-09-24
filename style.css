@@ -1,0 +1,163 @@
+/* start variable  */
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    --Font-size-paragraph:16px;
+
+}
+
+/* end variable  */
+  /* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+   }
+  body {
+   margin: 0;
+   padding: 0;
+ 
+
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  /* start font  */
+  @font-face {
+    font-family: "Outfit-VariableFont_wght";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: "YoungSerif-Regular";
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  }
+  @font-face {
+    font-family:"Outfit-Regular" ;
+    src: url(assets/fonts/outfit/static/Outfit-Regular.ttf);
+  }
+  /* end font  */
+  /* start card style */
+  .card{
+  
+  }    
+  .card  .container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .card .container .recape{
+ background-color: var(--White); 
+    width: 600px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    -moz-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
+     padding: 20px;
+  }
+  .card .container .recape img{
+    width: 100%;
+    border-radius: 13px;
+  }
+  .card .container .recape .title{
+color: var(--Stone-900);
+font-family: "Outfit-VariableFont_wght";
+font-family: "YoungSerif-Regular";
+  }
+  .card .container .recape .text{
+color: var(--Stone-600);
+line-height: 1.3;
+font-size: var(--Font-size-paragraph);
+font-family:"Outfit-Regular" ;
+  }
+  .card .container .recape .time{
+background-color: var(--Rose-50);
+padding: 20px;
+border-radius: 14px;
+  }
+  .card .container .recape .time >p {
+    color: var(--Rose-800);
+    font-weight: 700;
+
+  }
+  .card .container .recape .time > ul li{
+    padding: 9px;
+  }
+  .card .container .recape .time > ul li p{
+    color: var(--Stone-600);
+    margin: 0;
+  }
+  .card .container .recape .time > ul li::marker{
+    color: var(--Rose-800);
+  }
+  .card .container .recape .second-level{
+    color: var(--Brown-800);
+    font-family: "Outfit-VariableFont_wght";
+  }
+  .card .container .recape  ul li{
+    padding: 10px;
+  }.card .container .recape > ol li::marker{
+    color: var(--Brown-800);
+  }
+  .card .container .recape  ul li,
+  .card .container .recape  ol li p{
+    color: var(--Stone-600);
+    padding-left: 20px;
+    line-height: 1.3;
+ }
+  .card .container .recape table{
+    width: 100%;
+  }
+  .card .container .recape table tr{
+
+    text-align: left;
+  }
+  .card .container .recape table tr:not(:last-child){
+    border-bottom: 2px solid var(--Stone-900);
+  }
+  .card .container .recape table tr td{
+      padding: 10px;
+  }
+  .card .container .recape table tr td.contant{
+color: var(--Stone-600);
+  }
+  .card .container .recape table tr td.gramme{
+    color: var(--Brown-800);
+    font-weight: 600;
+  }
+  hr{color: var(--Stone-600);
+padding: 0 20px;}
+  /* end card style  */
